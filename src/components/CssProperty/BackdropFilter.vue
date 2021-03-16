@@ -1,0 +1,30 @@
+<template>
+  <div>
+    <DemoImage class="bg-cover"
+      ><div class="absolute top-4 left-4 w-32 h-24 demo"></div
+    ></DemoImage>
+  </div>
+</template>
+
+<script>
+import DemoImage from "@/components/DemoImage.vue";
+
+export default {
+  name: "backdrop-filter",
+  components: {
+    DemoImage,
+  },
+};
+</script>
+
+<style scoped lang="scss">
+.demo {
+  background-color: rgba(0, 0, 0, 0.4); // for demo purposes
+  transition: backdrop-filter 0.7s ease-out;
+  backdrop-filter: blur(0);
+
+  &:hover {
+    backdrop-filter: blur(5px);
+  }
+}
+</style>
