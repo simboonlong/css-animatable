@@ -1,6 +1,6 @@
 <template>
   <ExampleImage class="bg-cover"
-    ><div class="absolute top-4 left-4 w-32 h-24 demo"></div
+    ><div class="absolute top-4 left-4 w-48 h-32 demo"></div
   ></ExampleImage>
 </template>
 

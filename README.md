@@ -7,11 +7,14 @@
 - To have a quick overview glance of other possible css animation for inspirations.
 - To explore each attribute as a learning process.
 
+### Demo
+- [demo](http://css.simboonlong.com).
+
 ### To contribute
 
-- You can make a pull request after creating a new attribute in [here](https://github.com/simboonlong/css-animatable/tree/master/src/components/CssProperty).
+- You can make a pull request after creating an attribute to demo in [here](https://github.com/simboonlong/css-animatable/tree/master/src/components/CssProperty).
 - Animation should be triggered by hover (for easy viewing).
-- Free to create as many creative demos pertaining to the attribute.
+- Feel free to create as many creative demos.
 
 
 Author © [Sim Boon Long](http://simboonlong.com).

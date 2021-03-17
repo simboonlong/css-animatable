@@ -1,5 +1,4 @@
 <template>
-  <ExampleBox class="border-8 border-black mb-2 demo-color"> </ExampleBox>
   <ExampleBox class="border-8 border-black mb-2 demo-radius"> </ExampleBox>
   <ExampleBox class="border-8 border-black demo-radius-corner"> </ExampleBox>
 </template>
@@ -8,7 +7,7 @@
 import ExampleBox from "@/components/Example/ExampleBox.vue";
 
 export default {
-  name: "border",
+  name: "border-radius",
   components: {
     ExampleBox,
   },
@@ -16,14 +15,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.demo-color {
-  transition: border-color 0.7s ease-out;
-
-  &:hover {
-    border-color: orange;
-  }
-}
-
 .demo-radius {
   transition: border-radius 0.7s ease-out;
   border-style: dotted;
