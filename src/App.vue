@@ -72,12 +72,13 @@
   </footer>
 </template>
 
-<script>
+<script lang="ts">
+import { defineComponent } from "vue";
 import _ from "lodash";
 import { css } from "mdn-data";
 import Demo from "@/components/Demo.vue";
 
-export default {
+export default defineComponent({
   name: "Home",
   components: {
     Demo,
@@ -89,7 +90,8 @@ export default {
   },
   computed: {
     // https://v3.vuejs.org/api/options-data.html#computed
-    cssPropertiesFiltered() {
+    // https://github.com/mdn/data/blob/master/css/properties.schema.json
+    cssPropertiesFiltered(): any {
       const picked = _.pickBy(this.properties, (property, value) => {
         if (
           property.animationType !== "notAnimatable" &&
@@ -102,7 +104,7 @@ export default {
       return picked;
     },
   },
-};
+});
 </script>
 
 <style lang="scss">

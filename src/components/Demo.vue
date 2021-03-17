@@ -62,9 +62,10 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 // https://stackoverflow.com/questions/65378635/vue-3-use-dynamic-component-with-dynamic-imports
-import { defineAsyncComponent } from "vue";
+// eslint-disable-next-line no-unused-vars
+import { defineAsyncComponent, defineComponent, VNode } from "vue";
 import pascalcase from "pascalcase";
 
 const requireContext = require.context(
@@ -78,7 +79,11 @@ const componentNames = requireContext
   .keys()
   .map((file) => file.replace(/(^.\/)|(\.vue$)/g, ""));
 
-let components = {};
+interface CssPropertyType {
+  [key: string]: VNode;
+}
+
+let components: CssPropertyType = {};
 
 componentNames.forEach((component) => {
   components[component] = defineAsyncComponent(() =>
@@ -86,7 +91,7 @@ componentNames.forEach((component) => {
   );
 });
 
-export default {
+export default defineComponent({
   name: "Demo",
   props: {
     name: String,
@@ -104,11 +109,11 @@ export default {
     toggleData() {
       this.isExpand = !this.isExpand;
     },
-    pascalCase(str) {
+    pascalCase(str: string) {
       return pascalcase(str);
     },
   },
-};
+});
 </script>
 
 <style scoped lang="scss">

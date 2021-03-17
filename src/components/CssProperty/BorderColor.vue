@@ -2,15 +2,16 @@
   <ExampleBox class="border-8 border-black demo"> </ExampleBox>
 </template>
 
-<script>
+<script lang="ts">
+import { defineComponent } from "vue";
 import ExampleBox from "@/components/Example/ExampleBox.vue";
 
-export default {
+export default defineComponent({
   name: "border-color",
   components: {
     ExampleBox,
   },
-};
+});
 </script>
 
 <style scoped lang="scss">
