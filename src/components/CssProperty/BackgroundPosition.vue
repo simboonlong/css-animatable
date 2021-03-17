@@ -1,16 +1,14 @@
 <template>
-  <div>
-    <DemoImage class="bg-cover demo"> </DemoImage>
-  </div>
+  <ExampleImage class="bg-cover demo"> </ExampleImage>
 </template>
 
 <script>
-import DemoImage from "@/components/DemoImage.vue";
+import ExampleImage from "@/components/Example/ExampleImage.vue";
 
 export default {
   name: "backdrop-position",
   components: {
-    DemoImage,
+    ExampleImage,
   },
 };
 </script>
@@ -21,7 +19,7 @@ export default {
   background-position: 50% 50%;
 
   &:hover {
-    background-position: 0 -300px;
+    background-position: 0 -640px;
   }
 }
 </style>

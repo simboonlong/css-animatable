@@ -1,17 +1,17 @@
 <template>
-  <div class="relative w-72 h-48 hills">
+  <div class="relative aspect-3-2 hills">
     <slot></slot>
   </div>
 </template>
 
 <script>
 export default {
-  name: "DemoImage",
+  name: "ExampleImage",
 };
 </script>
 
 <style scoped lang="scss">
 .hills {
-  background-image: url("./../assets/hills.jpg");
+  background-image: url("./../../assets/hills.jpg");
 }
 </style>

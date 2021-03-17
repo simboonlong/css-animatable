@@ -1,16 +1,14 @@
 <template>
-  <div>
-    <DemoImage class="demo"> </DemoImage>
-  </div>
+  <ExampleImage class="demo"> </ExampleImage>
 </template>
 
 <script>
-import DemoImage from "@/components/DemoImage.vue";
+import ExampleImage from "@/components/Example/ExampleImage.vue";
 
 export default {
   name: "background-size",
   components: {
-    DemoImage,
+    ExampleImage,
   },
 };
 </script>

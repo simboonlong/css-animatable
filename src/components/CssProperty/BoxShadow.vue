@@ -6,7 +6,7 @@
 import ExampleBox from "@/components/Example/ExampleBox.vue";
 
 export default {
-  name: "background-color",
+  name: "box-shadow",
   components: {
     ExampleBox,
   },
@@ -15,10 +15,11 @@ export default {
 
 <style scoped lang="scss">
 .demo {
-  transition: background-color 0.7s ease-out;
+  transition: box-shadow 0.7s ease-out;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
 
   &:hover {
-    background-color: orange;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   }
 }
 </style>

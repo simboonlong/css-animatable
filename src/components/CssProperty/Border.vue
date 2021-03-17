@@ -1,18 +1,16 @@
 <template>
-  <div>
-    <DemoBox class="border-8 border-black mb-2 demo-color"> </DemoBox>
-    <DemoBox class="border-8 border-black mb-2 demo-radius"> </DemoBox>
-    <DemoBox class="border-8 border-black demo-radius-corner"> </DemoBox>
-  </div>
+  <ExampleBox class="border-8 border-black mb-2 demo-color"> </ExampleBox>
+  <ExampleBox class="border-8 border-black mb-2 demo-radius"> </ExampleBox>
+  <ExampleBox class="border-8 border-black demo-radius-corner"> </ExampleBox>
 </template>
 
 <script>
-import DemoBox from "@/components/DemoBox.vue";
+import ExampleBox from "@/components/Example/ExampleBox.vue";
 
 export default {
-  name: "background-color",
+  name: "border",
   components: {
-    DemoBox,
+    ExampleBox,
   },
 };
 </script>

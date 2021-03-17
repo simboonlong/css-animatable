@@ -1,10 +1,10 @@
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
-  <header class="max-w-screen-2xl mx-auto px-4 py-8">
+  <header class="max-w-screen-2xl mx-auto px-8 py-6">
     <div class="max-w-md">
-      <h1 class="text-4xl font-bold">Animatable CSS</h1>
+      <h1 class="text-4xl font-bold">CSS Animatable</h1>
       <h4 class="text-lg font-semibold mb-4">
-        A place to get inspiration for css animations.
+        A place to get quick inspiration for css animations.
       </h4>
       <p>
         The demos below are based on css properties from
@@ -24,20 +24,20 @@
       </p>
     </div>
   </header>
-  <main class="max-w-screen-2xl mx-auto px-4">
-    <ul class="flex flex-wrap -mx-4">
+  <main class="max-w-screen-2xl mx-auto px-8">
+    <ul class="flex flex-wrap -mx-8">
       <li
-        class="w-full lg:w-1/2 px-4"
+        class="w-full lg:w-1/2 px-8"
         v-for="(value, key, index) in cssPropertiesFiltered"
         :key="index"
       >
-        <Demo :name="key" :data="value" :number="index" />
+        <Demo :name="key" :data="value" :demoIndex="index" />
       </li>
     </ul>
   </main>
   <footer class="bg-gray-100">
     <div
-      class="max-w-screen-2xl mx-auto px-4 py-6 text-sm text-gray-500 mt-8 lg:mt-0"
+      class="max-w-screen-2xl mx-auto px-8 py-6 text-sm text-gray-500 mt-8 lg:mt-0"
     >
       <p>
         Total css properties from mdn-data: {{ Object.keys(properties).length }}
@@ -50,7 +50,7 @@
         <i
           >Code @
           <a
-            href="https://github.com/simboonlong/animatable-css"
+            href="https://github.com/simboonlong/css-animatable"
             target="_blank"
             rel="noopener noreferrer"
             >Github</a
@@ -105,7 +105,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -114,7 +114,29 @@ export default {
 }
 
 a {
+  transition: color 0.2s ease-out;
   color: #42b983;
   text-decoration: underline;
+
+  &:hover {
+    color: #238d5d;
+  }
+}
+
+.aspect-3-2 {
+  &::before {
+    content: "";
+    width: 1px;
+    margin-left: -1px;
+    float: left;
+    height: 0;
+    padding-top: (2 / 3) * 100%;
+  }
+
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 </style>

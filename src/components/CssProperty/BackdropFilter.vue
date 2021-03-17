@@ -1,18 +1,16 @@
 <template>
-  <div>
-    <DemoImage class="bg-cover"
-      ><div class="absolute top-4 left-4 w-32 h-24 demo"></div
-    ></DemoImage>
-  </div>
+  <ExampleImage class="bg-cover"
+    ><div class="absolute top-4 left-4 w-32 h-24 demo"></div
+  ></ExampleImage>
 </template>
 
 <script>
-import DemoImage from "@/components/DemoImage.vue";
+import ExampleImage from "@/components/Example/ExampleImage.vue";
 
 export default {
   name: "backdrop-filter",
   components: {
-    DemoImage,
+    ExampleImage,
   },
 };
 </script>
