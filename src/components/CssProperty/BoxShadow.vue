@@ -2,15 +2,16 @@
   <ExampleBox class="demo"> </ExampleBox>
 </template>
 
-<script>
+<script lang="ts">
+import { defineComponent } from "vue";
 import ExampleBox from "@/components/Example/ExampleBox.vue";
 
-export default {
+export default defineComponent({
   name: "box-shadow",
   components: {
     ExampleBox,
   },
-};
+});
 </script>
 
 <style scoped lang="scss">

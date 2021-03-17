@@ -43,15 +43,16 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import { defineComponent } from "vue";
 import ExampleImage from "@/components/Example/ExampleImage.vue";
 
-export default {
+export default defineComponent({
   name: "background-size",
   components: {
     ExampleImage,
   },
-};
+});
 </script>
 
 <style scoped lang="scss">

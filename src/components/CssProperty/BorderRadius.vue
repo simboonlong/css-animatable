@@ -3,15 +3,16 @@
   <ExampleBox class="border-8 border-black demo-radius-corner"> </ExampleBox>
 </template>
 
-<script>
+<script lang="ts">
+import { defineComponent } from "vue";
 import ExampleBox from "@/components/Example/ExampleBox.vue";
 
-export default {
+export default defineComponent({
   name: "border-radius",
   components: {
     ExampleBox,
   },
-};
+});
 </script>
 
 <style scoped lang="scss">

@@ -4,15 +4,16 @@
   ></ExampleImage>
 </template>
 
-<script>
+<script lang="ts">
+import { defineComponent } from "vue";
 import ExampleImage from "@/components/Example/ExampleImage.vue";
 
-export default {
+export default defineComponent({
   name: "backdrop-filter",
   components: {
     ExampleImage,
   },
-};
+});
 </script>
 
 <style scoped lang="scss">
