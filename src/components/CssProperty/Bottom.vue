@@ -1,7 +1,7 @@
 <template>
-  <ExampleBox class="example"
-    ><div class="absolute w-1/2 h-1/2 demo"></div
-  ></ExampleBox>
+  <ExampleBox class="aspect-3-2 example">
+    <div class="absolute w-1/2 h-1/2 bg-yellow-500 demo"></div>
+  </ExampleBox>
 </template>
 
 <script lang="ts">
@@ -26,7 +26,6 @@ export default defineComponent({
 }
 
 .demo {
-  background-color: orange; // for demo purposes
   transition: bottom 0.7s ease-out;
   bottom: 0;
 }
