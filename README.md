@@ -1,6 +1,6 @@
 # css-animatable
 
-### Why?
+### Why
 
 - Abit lazy to click into individual examples in mdn.
 - The usual safe 4 are position, scale, rotation and opacity. Read more at [here](https://www.html5rocks.com/en/tutorials/speed/high-performance-animations).
@@ -8,7 +8,7 @@
 - To explore each attribute as a learning process.
 
 ### Demo
-- [demo](http://css.simboonlong.com).
+- [http://css.simboonlong.com](http://css.simboonlong.com).
 
 ### To contribute
 

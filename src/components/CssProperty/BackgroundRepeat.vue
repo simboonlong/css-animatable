@@ -7,7 +7,7 @@ import { defineComponent } from "vue";
 import ExampleImage from "@/components/Example/ExampleImage.vue";
 
 export default defineComponent({
-  name: "background-position",
+  name: "background-repeat",
   components: {
     ExampleImage,
   },
@@ -16,11 +16,12 @@ export default defineComponent({
 
 <style scoped lang="scss">
 .demo {
-  transition: background-position 0.7s ease-out;
-  background-position: 50% 50%;
+  transition: background-repeat 0.7s ease-out;
+  background-size: 60px 40px;
+  background-repeat: repeat;
 
   &:hover {
-    background-position: 0 -640px;
+    background-repeat: repeat-y;
   }
 }
 </style>

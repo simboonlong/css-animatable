@@ -1,63 +1,63 @@
 <template>
   <div class="flex flex-wrap lg:-mx-2 text-xs">
     <div class="w-full lg:w-1/2 lg:px-2 mb-2">
-      <ExampleImage class="bg-cover demo multiply"> </ExampleImage>
+      <ExampleImage class="bg-cover demo multiply" />
       <p>multiply</p>
     </div>
     <div class="w-full lg:w-1/2 lg:px-2 mb-2">
-      <ExampleImage class="bg-cover demo screen"> </ExampleImage>
+      <ExampleImage class="bg-cover demo screen" />
       <p>screen</p>
     </div>
     <div class="w-full lg:w-1/2 lg:px-2 mb-2">
-      <ExampleImage class="bg-cover demo overlay"> </ExampleImage>
+      <ExampleImage class="bg-cover demo overlay" />
       <p>overlay</p>
     </div>
     <div class="w-full lg:w-1/2 lg:px-2 mb-2">
-      <ExampleImage class="bg-cover demo darken"> </ExampleImage>
+      <ExampleImage class="bg-cover demo darken" />
       <p>darken</p>
     </div>
     <div class="w-full lg:w-1/2 lg:px-2 mb-2">
-      <ExampleImage class="bg-cover demo lighten"> </ExampleImage>
+      <ExampleImage class="bg-cover demo lighten" />
       <p>lighten</p>
     </div>
     <div class="w-full lg:w-1/2 lg:px-2 mb-2">
-      <ExampleImage class="bg-cover demo color-dodge"> </ExampleImage>
+      <ExampleImage class="bg-cover demo color-dodge" />
       <p>color-dodge</p>
     </div>
     <div class="w-full lg:w-1/2 lg:px-2 mb-2">
-      <ExampleImage class="bg-cover demo color-burn"> </ExampleImage>
+      <ExampleImage class="bg-cover demo color-burn" />
       <p>color-burn</p>
     </div>
     <div class="w-full lg:w-1/2 lg:px-2 mb-2">
-      <ExampleImage class="bg-cover demo hard-light"> </ExampleImage>
+      <ExampleImage class="bg-cover demo hard-light" />
       <p>hard-light</p>
     </div>
     <div class="w-full lg:w-1/2 lg:px-2 mb-2">
-      <ExampleImage class="bg-cover demo soft-light"> </ExampleImage>
+      <ExampleImage class="bg-cover demo soft-light" />
       <p>soft-light</p>
     </div>
     <div class="w-full lg:w-1/2 lg:px-2 mb-2">
-      <ExampleImage class="bg-cover demo difference"> </ExampleImage>
+      <ExampleImage class="bg-cover demo difference" />
       <p>difference</p>
     </div>
     <div class="w-full lg:w-1/2 lg:px-2 mb-2">
-      <ExampleImage class="bg-cover demo exclusion"> </ExampleImage>
+      <ExampleImage class="bg-cover demo exclusion" />
       <p>exclusion</p>
     </div>
     <div class="w-full lg:w-1/2 lg:px-2 mb-2">
-      <ExampleImage class="bg-cover demo hue"> </ExampleImage>
+      <ExampleImage class="bg-cover demo hue" />
       <p>hue</p>
     </div>
     <div class="w-full lg:w-1/2 lg:px-2 mb-2">
-      <ExampleImage class="bg-cover demo saturation"> </ExampleImage>
+      <ExampleImage class="bg-cover demo saturation" />
       <p>saturation</p>
     </div>
     <div class="w-full lg:w-1/2 lg:px-2 mb-2">
-      <ExampleImage class="bg-cover demo color"> </ExampleImage>
+      <ExampleImage class="bg-cover demo color" />
       <p>color</p>
     </div>
     <div class="w-full lg:w-1/2 lg:px-2 mb-2">
-      <ExampleImage class="bg-cover demo luminosity"> </ExampleImage>
+      <ExampleImage class="bg-cover demo luminosity" />
       <p>luminosity</p>
     </div>
   </div>

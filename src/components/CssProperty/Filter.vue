@@ -1,43 +1,43 @@
 <template>
   <div class="flex flex-wrap lg:-mx-2 text-xs">
     <div class="w-full lg:w-1/2 lg:px-2 mb-2">
-      <ExampleImage class="bg-cover demo blur"> </ExampleImage>
+      <ExampleImage class="bg-cover demo blur" />
       <p>blur</p>
     </div>
     <div class="w-full lg:w-1/2 lg:px-2 mb-2">
-      <ExampleImage class="bg-cover demo brightness"> </ExampleImage>
+      <ExampleImage class="bg-cover demo brightness" />
       <p>brightness</p>
     </div>
     <div class="w-full lg:w-1/2 lg:px-2 mb-2">
-      <ExampleImage class="bg-cover demo contrast"> </ExampleImage>
+      <ExampleImage class="bg-cover demo contrast" />
       <p>contrast</p>
     </div>
     <div class="w-full lg:w-1/2 lg:px-2 mb-2">
-      <ExampleImage class="bg-cover demo drop-shadow"> </ExampleImage>
+      <ExampleImage class="bg-cover demo drop-shadow" />
       <p>drop-shadow</p>
     </div>
     <div class="w-full lg:w-1/2 lg:px-2 mb-2">
-      <ExampleImage class="bg-cover demo grayscale"> </ExampleImage>
+      <ExampleImage class="bg-cover demo grayscale" />
       <p>grayscale</p>
     </div>
     <div class="w-full lg:w-1/2 lg:px-2 mb-2">
-      <ExampleImage class="bg-cover demo hue-rotate"> </ExampleImage>
+      <ExampleImage class="bg-cover demo hue-rotate" />
       <p>hue-rotate</p>
     </div>
     <div class="w-full lg:w-1/2 lg:px-2 mb-2">
-      <ExampleImage class="bg-cover demo invert"> </ExampleImage>
+      <ExampleImage class="bg-cover demo invert" />
       <p>invert</p>
     </div>
     <div class="w-full lg:w-1/2 lg:px-2 mb-2">
-      <ExampleImage class="bg-cover demo opacity"> </ExampleImage>
+      <ExampleImage class="bg-cover demo opacity" />
       <p>opacity</p>
     </div>
     <div class="w-full lg:w-1/2 lg:px-2 mb-2">
-      <ExampleImage class="bg-cover demo saturate"> </ExampleImage>
+      <ExampleImage class="bg-cover demo saturate" />
       <p>saturate</p>
     </div>
     <div class="w-full lg:w-1/2 lg:px-2 mb-2">
-      <ExampleImage class="bg-cover demo sepia"> </ExampleImage>
+      <ExampleImage class="bg-cover demo sepia" />
       <p>sepia</p>
     </div>
   </div>

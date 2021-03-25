@@ -89,14 +89,13 @@ export default defineComponent({
     };
   },
   computed: {
-    // https://v3.vuejs.org/api/options-data.html#computed
     // https://github.com/mdn/data/blob/master/css/properties.schema.json
     cssPropertiesFiltered(): any {
       const picked = _.pickBy(this.properties, (property, value) => {
         if (
           property.animationType !== "notAnimatable" &&
-          property.status === "standard" &&
-          value.charAt(0) !== "-"
+          property.status === "standard" && // only want standard
+          value.charAt(0) !== "-" // avoid vendor prefixes
         ) {
           return property;
         }

@@ -1,8 +1,6 @@
 <template>
-  <ExampleBox class="aspect-3-2 border-8 border-black mb-2 demo-radius">
-  </ExampleBox>
-  <ExampleBox class="aspect-3-2 border-8 border-black demo-radius-corner">
-  </ExampleBox>
+  <ExampleBox class="aspect-3-2 border-8 border-black mb-2 demo-radius" />
+  <ExampleBox class="aspect-3-2 border-8 border-black demo-radius-corner" />
 </template>
 
 <script lang="ts">
