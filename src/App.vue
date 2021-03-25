@@ -92,8 +92,11 @@ export default defineComponent({
     // https://github.com/mdn/data/blob/master/css/properties.schema.json
     cssPropertiesFiltered(): any {
       const picked = _.pickBy(this.properties, (property, value) => {
+        // https://github.com/mdn/kumascript/blob/master/macros/CSSAnimatedProperties.ejs
+        // tallied with mdn list of animatable properties at 197, but want to further filter
         if (
           property.animationType !== "notAnimatable" &&
+          property.animationType !== "discrete" &&
           property.status === "standard" && // only want standard
           value.charAt(0) !== "-" // avoid vendor prefixes
         ) {
