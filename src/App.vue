@@ -7,20 +7,21 @@
         A place to get quick inspiration for css animations.
       </h4>
       <p>
-        The demos below are based on css properties from
+        Data pulled from
         <a
-          href="https://github.com/mdn/data/blob/master/css/properties.md"
+          href="https://github.com/mdn/data/blob/master/css/properties.json"
           target="_blank"
           rel="noopener noreferrer"
           >mdn-data</a
-        >. Refer to
+        >.
+        <br />
+        *List of
         <a
           href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties"
           target="_blank"
           rel="noopener noreferrer"
-          >this</a
-        >
-        for the animatable list.
+          >animatable css properties</a
+        >.
       </p>
     </div>
   </header>
@@ -43,7 +44,7 @@
         Total css properties from mdn-data: {{ Object.keys(properties).length }}
       </p>
       <p class="mb-4">
-        Filtered css properties:
+        *Filtered to animatable css properties + standard + non vendor prefixes:
         {{ Object.keys(cssPropertiesFiltered).length }}
       </p>
       <p>
@@ -77,6 +78,7 @@ import { defineComponent } from "vue";
 import _ from "lodash";
 import { css } from "mdn-data";
 import Demo from "@/components/Demo.vue";
+import { MdnData } from "./mdn-data";
 
 export default defineComponent({
   name: "Home",
@@ -85,15 +87,15 @@ export default defineComponent({
   },
   data() {
     return {
-      properties: css.properties,
+      properties: css.properties as MdnData,
     };
   },
   computed: {
-    // https://github.com/mdn/data/blob/master/css/properties.schema.json
-    cssPropertiesFiltered(): any {
+    cssPropertiesFiltered(): MdnData {
+      // https://github.com/mdn/data/blob/master/css/properties.schema.json
+      // https://github.com/mdn/yari/blob/main/kumascript/macros/CSSAnimatedProperties.ejs
+      // tallied with mdn list of animatable properties, but want to further filter
       const picked = _.pickBy(this.properties, (property, value) => {
-        // https://github.com/mdn/kumascript/blob/master/macros/CSSAnimatedProperties.ejs
-        // tallied with mdn list of animatable properties at 197, but want to further filter
         if (
           property.animationType !== "notAnimatable" &&
           property.animationType !== "discrete" &&
