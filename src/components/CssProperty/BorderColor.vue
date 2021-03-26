@@ -1,5 +1,5 @@
 <template>
-  <ExampleBox class="aspect-3-2 border-8 border-black demo" />
+  <ExampleBox class="aspect-3-2 border-8 demo" />
 </template>
 
 <script lang="ts">

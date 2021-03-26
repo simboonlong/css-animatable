@@ -20,7 +20,7 @@ export default defineComponent({
   box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
 
   &:hover {
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
   }
 }
 </style>

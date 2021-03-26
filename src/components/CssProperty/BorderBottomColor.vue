@@ -1,6 +1,5 @@
 <template>
-  <ExampleBox class="aspect-3-2 border-8 demo minor mb-2" />
-  <ExampleBox class="aspect-3-2 border-8 demo over" />
+  <ExampleBox class="demo">lorem ipsum</ExampleBox>
 </template>
 
 <script lang="ts">
@@ -8,7 +7,7 @@ import { defineComponent } from "vue";
 import ExampleBox from "@/components/Example/ExampleBox.vue";
 
 export default defineComponent({
-  name: "border-width",
+  name: "border-bottom-color",
   components: {
     ExampleBox,
   },
@@ -17,18 +16,11 @@ export default defineComponent({
 
 <style scoped lang="scss">
 .demo {
-  transition: border-width 0.7s ease-out;
-}
+  transition: border-bottom-color 0.7s ease-out;
+  border-bottom-width: 30px;
 
-.minor {
   &:hover {
-    border-width: 20px;
-  }
-}
-
-.over {
-  &:hover {
-    border-width: 200px;
+    border-bottom-color: orange;
   }
 }
 </style>

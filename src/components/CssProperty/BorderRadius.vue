@@ -1,6 +1,5 @@
 <template>
-  <ExampleBox class="aspect-3-2 border-8 border-black mb-2 demo-radius" />
-  <ExampleBox class="aspect-3-2 border-8 border-black demo-radius-corner" />
+  <ExampleBox class="aspect-3-2 border-8 mb-2 demo" />
 </template>
 
 <script lang="ts">
@@ -16,22 +15,12 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
-.demo-radius {
+.demo {
   transition: border-radius 0.7s ease-out;
   border-style: dotted;
 
   &:hover {
     border-radius: 64px;
-  }
-}
-
-.demo-radius-corner {
-  transition: border-radius 0.7s ease-out;
-  border-style: double;
-
-  &:hover {
-    border-top-right-radius: 64px;
-    border-bottom-left-radius: 64px;
   }
 }
 </style>
