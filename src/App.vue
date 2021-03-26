@@ -92,7 +92,6 @@ export default defineComponent({
   },
   computed: {
     cssPropertiesFiltered(): MdnData {
-      // https://github.com/mdn/data/blob/master/css/properties.schema.json
       // https://github.com/mdn/yari/blob/main/kumascript/macros/CSSAnimatedProperties.ejs
       // tallied with mdn list of animatable properties, but want to further filter
       const picked = _.pickBy(this.properties, (property, value) => {

@@ -64,7 +64,6 @@
 
 <script lang="ts">
 // https://stackoverflow.com/questions/65378635/vue-3-use-dynamic-component-with-dynamic-imports
-// eslint-disable-next-line no-unused-vars
 import { defineAsyncComponent, defineComponent, VNode } from "vue";
 import pascalcase from "pascalcase";
 
@@ -83,7 +82,7 @@ interface CssPropertyType {
   [key: string]: VNode;
 }
 
-let components: CssPropertyType = {};
+const components: CssPropertyType = {};
 
 componentNames.forEach((component) => {
   components[component] = defineAsyncComponent(() =>
