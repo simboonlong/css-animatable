@@ -22,6 +22,7 @@ export default defineComponent({
 
 .diamond {
   clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+
   &:hover {
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   }
@@ -29,6 +30,7 @@ export default defineComponent({
 
 .circle {
   clip-path: circle(100%);
+
   &:hover {
     clip-path: circle(0%);
   }
