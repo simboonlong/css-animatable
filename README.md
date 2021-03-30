@@ -6,14 +6,11 @@
 
 ### Why
 
-- Abit lazy to click into individual examples in [mdn](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties).
-- The usual safe 4 are position, scale, rotation and opacity. Read more at [here](https://www.html5rocks.com/en/tutorials/speed/high-performance-animations).
-- To have a quick overview glance of other possible css animation for inspirations.
-- To explore each attribute as a learning process.
+- [https://css.simboonlong.com/present.html](https://css.simboonlong.com/present.html).
 
 ### Demo
 
-- [http://css.simboonlong.com](http://css.simboonlong.com).
+- [https://css.simboonlong.com](https://css.simboonlong.com).
 
 ### To contribute
 
