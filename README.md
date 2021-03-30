@@ -6,7 +6,7 @@
 
 ### Why
 
-- [https://css.simboonlong.com/present.html](https://css.simboonlong.com/present.html)
+- [https://css.simboonlong.com/introduction.html](https://css.simboonlong.com/introduction.html)
 
 ### Demo
 
@@ -14,7 +14,7 @@
 
 ### To contribute
 
-- Make a pull request after creating a new attribute with demo, or add on new creative demos to any attribute in [here](https://github.com/simboonlong/css-animatable/tree/master/src/components/CssProperty).
+- Make a pull request after creating a new attribute with demo, or add on any new creative demos to existing attribute in [here](https://github.com/simboonlong/css-animatable/tree/master/src/components/CssProperty).
 - Animation should be triggered by hover (for easy viewing).
 
 Author © [Sim Boon Long](http://simboonlong.com).

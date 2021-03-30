@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html class="present">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>CSS Animatable - Introduction</title>
+    <style>
+      html {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        margin: 0;
+        color: #333;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin-top: 0;
+      }
+
+      p {
+        margin: 0.5em 0;
+      }
+
+      ul {
+        margin: 0.4em 0;
+        text-align: left;
+      }
+
+      li {
+        margin: 0.6em 0;
+      }
+
+      b {
+        font-weight: 500;
+      }
+
+      sm {
+        display: block;
+        margin: 0.4em 0;
+        color: #777;
+        font-size: 13px;
+      }
+
+      section:nth-child(odd) {
+        background-color: aliceblue;
+      }
+
+      section:nth-child(even) {
+        background-color: antiquewhite;
+      }
+
+      .present {
+        scroll-snap-type: mandatory;
+        scroll-snap-points-y: repeat(100vh);
+        scroll-snap-type: y mandatory;
+        font-size: 20px;
+      }
+
+      .present section {
+        scroll-snap-align: start;
+        height: calc(100vh - 64px);
+        padding: 32px;
+      }
+
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .h-full {
+        height: 100%;
+      }
+
+      @media screen and (min-width: 768px) {
+        .present {
+          font-size: 40px;
+        }
+
+        sm {
+          font-size: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="center h-full">
+          <h2>Why 🤔</h2>
+          <ul>
+            <li>
+              <b>Lazy</b> to click into mdn
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties"
+                target="_blank"
+                rel="noopener noreferrer"
+                >examples</a
+              >
+            </li>
+            <li>
+              <b>Wanted more</b> than the usual 4 performant
+              <a
+                href="https://www.html5rocks.com/en/tutorials/speed/high-performance-animations"
+                target="_blank"
+                rel="noopener noreferrer"
+                >properties</a
+              ><sm
+                >Read more
+                <a
+                  href="https://www.paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >here</a
+                >
+                and
+                <a
+                  href="https://gist.github.com/paulirish/5d52fb081b3570c81e3a"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >here</a
+                >. There was also a trick like hardware aceleration with
+                translateZ(0) too. 😬</sm
+              >
+            </li>
+            <li>As a <b>inspiration bank</b> for quick visual references</li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div class="center h-full">
+          <h2>Story goes...</h2>
+          <p>
+            Animate.css was the first css animation library I came across.
+          </p>
+          <ul>
+            <li>Simplicity</li>
+            <li>Just works</li>
+            <li>Silly fun</li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div class="center h-full">
+          <h2>Animation options</h2>
+          <ul>
+            <li>css transition - usually used for hover states</li>
+            <li>css animation - keyframes, steps (useful for sprites)</li>
+            <li>js (tween based) - gsap, anime.js</li>
+            <li>js (physics based) ☠️ - react spring, d3.js (d3-force)</li>
+            <li>svg native animation ☠️ - SMIL (???), snapsvg</li>
+            <li>webgl, canvas ☠️ - three.js</li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div class="center h-full">
+          <h2>Things has come full circle 😇</h2>
+          <p>Always liked things simple, like how animate.css is.</p>
+          <p>
+            Exploration on animatable css properties. 🧐<sm
+              >Strangely, some property doesn't really animate through time.
+              🤷‍♀️</sm
+            >
+          </p>
+          <p>To discover any interesting effects.</p>
+          <p>
+            <a
+              href="https://css.simboonlong.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >demo</a
+            >
+            |
+            <a
+              href="https://github.com/simboonlong/css-animatable"
+              target="_blank"
+              rel="noopener noreferrer"
+              >github</a
+            >
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
