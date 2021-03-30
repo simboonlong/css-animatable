@@ -6,11 +6,11 @@
 
 ### Why
 
-- [https://css.simboonlong.com/present.html](https://css.simboonlong.com/present.html).
+- [https://css.simboonlong.com/present.html](https://css.simboonlong.com/present.html)
 
 ### Demo
 
-- [https://css.simboonlong.com](https://css.simboonlong.com).
+- [https://css.simboonlong.com](https://css.simboonlong.com)
 
 ### To contribute
 
